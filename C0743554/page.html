@@ -10,6 +10,14 @@
                 alert("welcome to my WebPage!!!");
 
             }
+            function mouseRollover(MyImage) {
+                MyImage.src = "p.jfif";
+            }
+            function mouseOut(MyImage) {
+                MyImage.src="Germany.jpg";
+            }
+
+            
         }
     </script>
     <style>
@@ -24,7 +32,11 @@
 </head>
 <body onload="trigger();">
     <p id="hover">WELCOME!!!</p>
-    <img src="images/Germany.jpg" id="images">
+    <div align="center"></div>
     
+         <img src="images/Germany.jpg" id="images"border="0px" width="400px" height="300px"
+    onMouseOver="MouseRollOver(this)"
+    onMouseOut="MouseOut(this)"/>
+
 </body>
 </html>
